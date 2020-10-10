@@ -1,0 +1,38 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form action="">
+<!-- input tag 앞에 있는 id, password, textarea를
+lable이다라고 표현하기 위해 lable를 쓴다 -->
+<!-- label만 쓰면 누구의 label인지 정확하지 않다
+그래서 label tag에 for 그리고 input엔 id라는 속성을
+부가하여 정의한다. -->
+        <p>
+        <label>id : 
+        <input type="text" 
+        name="id" value="default value"></label>
+        </p>
+        <p>
+        <label for="pwd_txt">password : </label>
+        <input id="pwd_txt" type="password" name="pwd" 
+        value="default value">
+        </p>
+        <p>
+        <label for="textarea_txt">textarea : </label>
+        <textarea id="textarea_txt" name="ta" 
+        cols="50" rows="2">
+            default value</textarea>
+        </p>
+        <label>
+        <input type="checkbox" name="cap" value="cap">
+        모자
+        </label> 
+        <input type="checkbox" id="shows" name="shows"
+        value="shows"><label for="shows"> 신발</label>
+    </form>
+</body>
+</html>
